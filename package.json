@@ -1,0 +1,14 @@
+{
+  "name": "suggestions-screen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:adrianomonteiroweb/suggestions-screen.git",
+  "author": "Adriano Monteiro <adrianomonteiroweb@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
