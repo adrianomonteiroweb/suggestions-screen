@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  api:
+    build:
+      context: ./packages/api
+    ports:
+      - "3001:3001"
