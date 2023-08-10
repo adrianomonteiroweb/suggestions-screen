@@ -5,6 +5,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "start": "ts-node src/server.ts",
     "lint": "eslint --ext .ts src",
     "test": "jest"
   },
