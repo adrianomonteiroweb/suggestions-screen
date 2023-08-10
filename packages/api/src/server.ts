@@ -1,10 +1,13 @@
 import express from 'express'
 import cors from 'cors'
+require('dotenv').config();
+
 
 class ServerBootstrapper {
    
     public app: express.Application = express();
-    private port: number = 3000
+    private port: string | undefined =  process.env.PORT
+    
 
     constructor()
     {
