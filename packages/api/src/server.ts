@@ -1,24 +1,16 @@
-import express from 'express'
-import cors from 'cors'
-require('dotenv').config();
-
+import app from './app';
+import dotenv from 'dotenv';
+dotenv.config();
 
 class ServerBootstrapper {
-   
-    public app: express.Application = express();
-    private port: string | undefined =  process.env.PORT
-    
+    private port: string | undefined = process.env.PORT;
 
-    constructor()
-    {
-        this.app.use(express.json());
-        this.app.use(cors());
+    constructor() {
         this.listen();
     }
 
-    public listen() 
-    {
-       this.app.listen(this.port, () => console.log(`ouvindo na porta ${this.port}`))
+    public listen() {
+        app.listen(this.port, () => console.log(`Ouvindo na porta ${this.port}`));
     }
 }
 
